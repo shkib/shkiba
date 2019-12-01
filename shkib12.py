@@ -8,7 +8,7 @@ def inline(message):
   key = types.InlineKeyboardMarkup()
   but_1 = types.InlineKeyboardButton(text="КОНЕЧНО!!!", callback_data="FirstOne")
   key.add(but_1)
-  bot.send_message(message.chat.id, "ЗДАРОВА, МЕНЯ ЗОВУТ ОЛЕГ !!! \n Хочешь я покажу тебе чему я пока научился? \n  \n Готов?", reply_markup=key)
+  bot.send_message(message.chat.id, "ЗДАРОВА, МЕНЯ ЗОВУТ ОЛЕГ !!! \n Хочешь я тебе отправлю свое фото? \n  \n Готов?", reply_markup=key)
 
 @bot.callback_query_handler(func=lambda c:True)
 def inline(c):
